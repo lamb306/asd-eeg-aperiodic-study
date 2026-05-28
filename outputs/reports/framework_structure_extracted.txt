@@ -1,0 +1,122 @@
+TOTAL_PARAGRAPHS=135
+001	[Normal]	ASD 儿童静息态后部非周期 EEG 动力学与自然电影共情/心理推理加工
+003	[Heading 1]	一、核心定位
+004	[Normal]	本研究应被定位为一项 developmental systems neuroscience 研究，而不是单纯的 EEG biomarker 或电影任务组差研究。核心问题是：ASD 儿童静息态后部非周期 EEG 动力学是否会影响他们在自然电影中对共情和心理推理情节的刺激锁定神经同步，并且这种“静息态—自然电影耦合”是否具有年龄依赖性。
+005	[Normal]	一句话主张：ASD 儿童后部非周期皮层动力学异常不仅存在于静息态，而且会削弱其对自然istic共情和心理推理情节的神经同步；这种耦合异常可能构成 ASD 社会沟通困难的发育性神经生理机制之一。
+006	[Heading 1]	二、建议题目
+008	[Heading 1]	三、科学背景与研究缺口
+009	[Normal]	已有静息态 EEG 结果提示，ASD 儿童的 aperiodic exponent 低于 TD，组间差异具有年龄依赖性；相比传统周期峰参数，非周期成分更敏感。尤其重要的是，global exponent 在自动 ICA 敏感性分析后效应减弱，而后部局部 posterior exponent 在自动 ICA 后仍保持稳健，提示后部非周期指标比全脑平均指标更适合作为主表型。
+010	[Normal]	当前静息态结果的主要不足是：它证明了 ASD 与 TD 的基础神经状态不同，但尚未证明这种状态差异如何影响真实世界社会信息加工。自然电影《暴力云》具有明确的中性背景、共情加工和心理推理情节结构，正好可以作为连接静息态神经生理与自然istic社会加工的功能输出。
+011	[Normal]	因此，本文的核心创新不是简单加入电影 EEG，而是检验 resting posterior aperiodic state 是否预测 empathy/mentalizing scenes 中的 neural synchronization，以及这种 state-to-processing coupling 是否在 ASD 中异常。
+012	[Heading 1]	四、总体机制模型
+013	[Normal]	建议采用三层机制模型：
+015	[Heading 1]	五、研究假设
+016	[Heading 2]	H1：静息态后部非周期异常
+017	[Normal]	ASD 儿童 resting posterior aperiodic exponent 低于 TD，并且该差异受到年龄调节。具体预期为：年龄越大，TD 与 ASD 在后部 exponent 上的差异越明显。
+018	[Heading 2]	H2：自然电影共情/心理推理片段神经同步降低
+019	[Normal]	ASD 儿童在《暴力云》的 empathy 和 mentalizing 片段中表现出较低的 posterior 或 temporo-parietal inter-subject correlation；neutral baseline 片段中组差较弱或不显著。
+020	[Heading 2]	H3：静息态—电影耦合异常
+021	[Normal]	TD 儿童中，resting posterior exponent 能够预测 empathy/mentalizing 片段的 movie ISC；ASD 儿童中这一耦合关系减弱或消失。
+022	[Heading 2]	H4：年龄依赖性
+023	[Normal]	resting posterior exponent 与 movie ISC 的耦合在较大年龄儿童中更明显；ASD 儿童可能表现出这种发育性耦合的减弱。
+024	[Heading 2]	H5：临床相关性（次要/探索）
+025	[Normal]	resting-to-movie coupling index 可能比单独 resting exponent 更接近临床社会沟通表型，例如 ADOS social affect、SRS、语言能力或适应功能。
+026	[Heading 1]	六、研究对象与已有数据
+027	[Normal]	研究对象为 ASD 儿童与典型发育儿童。已有数据包括每名被试约 5 分钟 resting-state EEG 和 5 分钟自然电影《暴力云》EEG。当前数据没有同步眼动，因此所有电影相关结论应聚焦于 EEG stimulus-locked neural dynamics，而不能声称完全独立于注视模式差异。
+029	[Heading 1]	七、实验范式
+030	[Heading 2]	7.1 Resting-state EEG
+031	[List Bullet]	时长：约 5 分钟。
+032	[List Bullet]	状态：睁眼静息，可注视十字或自然睁眼。
+033	[List Bullet]	主要用途：估计静息态 global/posterior aperiodic exponent、offset、周期峰参数，并进行 split-half reliability 和敏感性分析。
+034	[Heading 2]	7.2 《暴力云》自然电影 EEG
+035	[List Bullet]	时长：约 5 分钟。
+036	[List Bullet]	任务：自然观看，无需显性按键反应，以降低 ASD 儿童任务负担。
+037	[List Bullet]	理论优势：《暴力云》包含中性背景、共情/他人痛苦加工、心理推理/意图理解和关系修复等明确情节阶段。
+038	[List Bullet]	EEG 锁定：以电影起始 trigger 对齐全体被试连续 EEG。
+039	[Heading 1]	八、电影剧情分段方案
+040	[Normal]	主分析建议只保留三个理论驱动的 SegmentType，避免因电影分段过细导致统计自由度过高。
+042	[Normal]	建议由 2–3 名独立评分者对每 1 秒或 2 秒窗口进行盲法评分，维度包括 social content、empathy/distress、mentalizing demand、emotional intensity、motion intensity、auditory intensity 和 character presence。计算 ICC 或 Krippendorff alpha 后，再据评分确定 neutral、empathy 和 mentalizing 片段。
+043	[Heading 1]	九、EEG 预处理与质量控制
+044	[Heading 2]	9.1 基础预处理
+045	[List Number]	0.5–45 Hz bandpass；
+046	[List Number]	50 Hz notch；
+047	[List Number]	降采样至 250 Hz；
+048	[List Number]	坏导检测与插值；
+049	[List Number]	平均参考；
+050	[List Number]	ICA / ICLabel 自动伪迹分类与剔除；
+051	[List Number]	窗口级 artifact rejection；
+052	[List Number]	输出每名被试 resting 与 movie 的 QC 指标。
+053	[Heading 2]	9.2 Movie EEG 特殊处理
+054	[List Bullet]	保留连续 EEG 时间序列，用于 ISC 和 TRF。
+055	[List Bullet]	电影起始 trigger 对齐所有被试。
+056	[List Bullet]	剔除开头/结尾过渡期 2–5 秒（如有必要）。
+057	[List Bullet]	按剧情分段分别计算 ISC 和 movie-evoked aperiodic dynamics。
+058	[Heading 2]	9.3 无眼动数据的补救 QC
+059	[Normal]	由于没有眼动数据，必须在结果中报告并控制 EEG-derived attention/artifact proxies。建议至少包含：
+061	[Heading 1]	十、核心 EEG 指标
+062	[Heading 2]	10.1 Resting-state 指标
+064	[Normal]	Posterior ROI 可定义为 HydroCel-64 中后部 occipito-parietal ROI，例如 E33/E36/E37/E38。表述时建议写为“基于先验后部 ROI 或基于既有静息态发现的 confirmatory posterior ROI”，避免循环定义。
+065	[Heading 2]	10.2 Movie EEG 指标
+067	[Heading 1]	十一、主要分析方案
+068	[Heading 2]	Analysis 1：静息态 posterior exponent 复现
+069	[Normal]	模型：
+070	[Normal]	RestingPosteriorExponent ~ Group * Age + Sex + IQ + RestingUsableEpochs + RestingQC
+071	[Normal]	主检验：Group；Group × Age。补充分析包括 >72 月亚组、ICLabel 0.70/0.80、fixed vs knee specparam、不同拟合频段、IQ/sex matched subsample。
+072	[Heading 2]	Analysis 2：电影剧情片段 ISC 组差
+073	[Normal]	推荐采用 TD-template ISC。TD 被试使用 leave-one-out TD template，ASD 被试与全体 TD template 相关。每个被试每个片段得到 NeutralISC、EmpathyISC 和 MentalizingISC。
+074	[Normal]	模型：
+075	[Normal]	ISC ~ Group * SegmentType + Age + Sex + IQ + MovieUsableDuration + MovieQC + (1 | Subject)
+076	[Normal]	主检验：Group × SegmentType。预期 ASD 在 Empathy 和 Mentalizing 片段低于 TD，而 Neutral 片段差异较弱。
+077	[Heading 2]	Analysis 3：静息态—电影耦合
+078	[Normal]	这是全文最重要的机制模型。
+079	[Normal]	模型：
+080	[Normal]	ISC ~ Group * SegmentType * RestingPosteriorExponent + Age + Sex + IQ + MovieUsableDuration + MovieQC + (1 | Subject)
+081	[Normal]	主检验：Group × SegmentType × RestingPosteriorExponent。若 TD 中 resting posterior exponent 预测 empathy/mentalizing ISC，而 ASD 中该关系减弱或消失，即支持“基础后部非周期状态支持自然社会加工，而 ASD 中该耦合异常”的核心结论。
+082	[Heading 2]	Analysis 4：年龄调节模型
+083	[Normal]	模型 A：
+084	[Normal]	ISC ~ Group * SegmentType * Age + Sex + IQ + MovieQC + (1 | Subject)
+085	[Normal]	模型 B：
+086	[Normal]	ISC ~ Group * SegmentType * Age * RestingPosteriorExponent + Sex + IQ + MovieQC + (1 | Subject)
+087	[Normal]	四阶交互不应作为唯一主结果，建议作为 planned secondary analysis，并结合 >72 月亚组作直观验证。
+088	[Heading 2]	Analysis 5：Movie-evoked aperiodic modulation
+089	[Normal]	将电影 EEG 切成 4 秒窗口、50% overlap，估计每个窗口的 posterior exponent。再按剧情片段聚合，计算：
+090	[Normal]	SegmentDeltaExponent = SegmentPosteriorExponent - RestingPosteriorExponent
+091	[Normal]	模型：
+092	[Normal]	SegmentDeltaExponent ~ Group * SegmentType * Age + Sex + IQ + MovieQC + (1 | Subject)
+093	[Normal]	该分析回答 ASD 是否在共情/心理推理片段中表现出异常的非周期动态调节。
+094	[Heading 2]	Analysis 6：TRF / encoding model（次要）
+095	[Normal]	如果可以获取《暴力云》视频和音轨，建议提取 auditory envelope、visual motion energy、luminance 和 scene cut rate。使用 ridge regression 或 mTRF 估计 EEG 对低级视听特征的 tracking。
+096	[Normal]	模型：
+097	[Normal]	TrackingAccuracy ~ Group * SegmentType * RestingPosteriorExponent + Age + Sex + IQ + MovieQC
+098	[Normal]	该分析主要用于证明 movie response 的 stimulus-locked 性质，并控制低级视听特征，而不作为全文主线。
+099	[Heading 2]	Analysis 7：临床关联（次要/探索）
+100	[Normal]	ASD 组内检验 CouplingIndex 与临床社交沟通、语言或适应功能的关系。考虑到现有静息态稿件中临床关联较弱，建议只设 1–2 个核心临床指标为 planned secondary，其余作为探索。
+101	[Normal]	模型：
+102	[Normal]	ClinicalScore ~ CouplingIndex + Age + Sex + IQ + MovieQC
+103	[Normal]	CouplingIndex 可定义为 standardized RestingPosteriorExponent × MentalizingISC，或由 mixed model 提取 subject-level predicted coupling。
+105	[Heading 1]	十二、机器学习与转化分析
+106	[Normal]	机器学习不应作为主结论，而应作为 translational secondary analysis，检验 movie/coupling 特征是否提供超出 resting-only 特征的增量判别价值。
+108	[Normal]	验证框架：nested stratified 5-fold CV；inner 5-fold GridSearchCV；StandardScaler 放入 Pipeline；报告 AUC、balanced accuracy、sensitivity、specificity、F1、calibration；使用 permutation testing 和 DeLong test 比较模型。关键问题是 Coupling model 是否优于 Resting-only model。
+109	[Heading 1]	十三、统计控制与敏感性分析
+110	[Normal]	主模型建议统一控制：age、sex、IQ、usable EEG duration、bad channel count、artifact index、blink proxy、muscle proxy、mean specparam R²。若有药物、共病、睡眠、干预史等变量，可作为补充敏感性控制。
+112	[Heading 1]	十四、预期结果模式与解释
+114	[Heading 1]	十五、建议图表安排
+116	[Heading 1]	十六、摘要草案
+117	[Normal]	Background：Aperiodic EEG activity captures broadband cortical dynamics and may reveal neurodevelopmental alterations in autism that are not captured by conventional oscillatory power. However, whether resting-state aperiodic abnormalities are linked to naturalistic empathy and mentalizing processing remains unknown.
+118	[Normal]	Methods：Children with autism spectrum disorder and typically developing children completed 5 minutes of resting-state EEG and 5 minutes of naturalistic movie viewing using the animated short Partly Cloudy. The movie was segmented into neutral, empathy-related, and mentalizing-related narrative epochs. Resting-state aperiodic activity was quantified using spectral parameterization. Movie-evoked neural synchronization was quantified using segment-wise inter-subject correlation. Primary analyses tested diagnosis, age, narrative segment, and resting posterior aperiodic exponent as predictors of movie-evoked neural synchronization.
+119	[Normal]	Results：Resting posterior aperiodic exponent was expected to be lower in ASD and to show age-dependent group differences. During movie viewing, ASD children were expected to show reduced posterior neural synchronization specifically during empathy and mentalizing segments. Critically, resting posterior exponent was hypothesized to predict movie-evoked synchronization to empathy and mentalizing scenes in TD children, whereas this coupling would be attenuated in ASD.
+120	[Normal]	Conclusions：Posterior aperiodic EEG dynamics may provide a developmental link between intrinsic cortical physiology and naturalistic social information processing in autism. Disrupted coupling between resting-state cortical dynamics and real-world empathy/mentalizing processing may contribute to ASD social-communicative phenotypes.
+121	[Heading 1]	十七、Discussion 主线
+122	[List Number]	主要发现：ASD 后部非周期 EEG 异常不仅存在于静息态，而且与自然电影共情/心理推理片段的神经同步减弱相关。
+123	[List Number]	非周期机制意义：结果支持 aperiodic exponent 捕捉传统周期峰无法解释的宽频皮层动力学差异。
+124	[List Number]	自然电影意义：《暴力云》提供了比静态面孔/图片更接近真实世界的社会情节加工场景。
+125	[List Number]	状态—加工耦合：resting posterior exponent 可能代表支持自然istic社会加工的基础皮层状态；ASD 中这种支持关系减弱。
+126	[List Number]	发育意义：若耦合效应随年龄增强或在大龄儿童更明显，则提示 ASD 社会加工异常可能反映发育轨迹偏离，而非静态缺陷。
+127	[List Number]	临床意义：单独 resting exponent 不应被过度称为临床 biomarker；resting-to-movie coupling 可能更接近社会沟通表型。
+128	[Heading 1]	十八、限制与应对
+130	[Heading 1]	十九、最终投稿定位
+131	[Normal]	如果最终结果仅支持静息态组差和电影任务简单组差，建议目标为 Biological Psychiatry: Cognitive Neuroscience and Neuroimaging、NeuroImage: Clinical、Developmental Cognitive Neuroscience。
+132	[Normal]	如果结果支持“resting posterior exponent → empathy/mentalizing ISC”的 Group × SegmentType × RestingPosteriorExponent 交互，并显示年龄依赖性，则可以作为 Biological Psychiatry 正刊高风险首投。
+133	[Normal]	如果进一步显示 coupling index 与 ADOS/SRS/语言或适应功能相关，或 coupling model 明显优于 resting-only model，则 Biological Psychiatry 正刊的合理性显著提高。
+134	[Heading 1]	二十、最终框架一句话
+135	[Normal]	本研究利用 ASD 与 TD 儿童 5 分钟静息态 EEG 和 5 分钟《暴力云》自然电影 EEG，检验静息态后部非周期 EEG 动力学是否预测儿童对自然istic共情和心理推理情节的神经同步，以及这一静息态—电影耦合是否在 ASD 中表现为年龄依赖性的减弱，从而揭示 ASD 社会沟通困难的潜在神经生理机制。

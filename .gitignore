@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+
+# Data (large files — not for public repo)
+data/raw/*
+!data/raw/.gitkeep
+data/external_hbn_eeg/
+data/**/*.mff
+data/**/*.edf
+data/**/*.set
+data/**/*.bdf
+data/**/*.vhdr
+data/**/*.vmrk
+data/**/*.eeg
+
+# Root temp / one-off scripts
+.tmp_*.py
+
+# Derivatives & large intermediates
+derivatives/**/*.fif
+derivatives/**/*.set
+derivatives_external_hbn/
+derivatives_matched_postqc/
+
+# External download packages
+hbn_download_package*/
+transfer_packages/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Logs & temp
+*.log
+*._tmp_*.docx
+~$*.docx
+
+# Optional: large figure outputs (keep structure via .gitkeep if needed)
+outputs/**/*.png
+outputs/**/*.pdf
+outputs/**/*.svg
+!outputs/reports/
+!outputs/reports/**/*
+!outputs/tables/*.csv
+outputs/ml_biomarker/
+outputs_external_hbn/
+outputs/figures/
