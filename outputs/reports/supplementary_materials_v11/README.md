@@ -16,7 +16,7 @@
 | `02_运行流水线.md` | 推荐运行顺序、依赖安装、注意事项 |
 | `run_v11_pipeline.bat` | Windows 一键顺序调用（需在项目根目录执行） |
 | `requirements_reference.txt` | 与项目根目录 `requirements.txt` 一致的依赖列表 |
-| `scripts/` | 与主分析对应的脚本**副本**（便于课程打包；**请从项目根目录运行 `scripts/` 下原版**，见下文） |
+| `scripts/`（项目根目录） | v11 论文对应的分析脚本，见 `scripts/README_v11_pipeline.md` |
 
 ---
 
@@ -35,7 +35,7 @@ python scripts\00_check_environment.py
 # … 详见 02_运行流水线.md
 ```
 
-`supplementary_materials_v11/scripts/` 内文件仅供提交审阅；路径解析以项目根下 `scripts/` 为准。
+GitHub 仓库仅包含 v11 相关脚本（约 27 个），不含电影/HBN/外部队列等扩展分析。
 
 ---
 

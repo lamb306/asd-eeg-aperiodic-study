@@ -8,29 +8,109 @@ venv/
 .pytest_cache/
 
 # Data (large files — not for public repo)
-data/raw/*
+data/
 !data/raw/.gitkeep
-data/external_hbn_eeg/
-data/**/*.mff
-data/**/*.edf
-data/**/*.set
-data/**/*.bdf
-data/**/*.vhdr
-data/**/*.vmrk
-data/**/*.eeg
 
-# Root temp / one-off scripts
+# Root temp / one-off / external cohort tools
 .tmp_*.py
+*.msi
+*.rar
+*.zip
+build_*.py
+check_*.py
+download_*.py
+expand_*.py
+find_*.py
+replenish_*.py
+run_resting_download_batches.py
+data.csv
+revision_report_*.md
+manuscript_submission_final.docx
+supplementary_materials*.docx
+figures_submission*/
+tables_submission*/
+transfer_packages*
 
 # Derivatives & large intermediates
-derivatives/**/*.fif
-derivatives/**/*.set
-derivatives_external_hbn/
-derivatives_matched_postqc/
+derivatives/
+derivatives_*/
+outputs_matched*/
+outputs_task*/
+outputs_external*/
 
 # External download packages
 hbn_download_package*/
+hbn_eeg_subject_release*
 transfer_packages/
+
+# --- scripts/: only v11 pipeline (see scripts/README_v11_pipeline.md) ---
+scripts/*
+!scripts/README_v11_pipeline.md
+!scripts/00_check_environment.py
+!scripts/01_prepare_participants.py
+!scripts/02_preprocess_eeg.py
+!scripts/03_compute_psd.py
+!scripts/04_run_specparam.py
+!scripts/05_specparam_qc.py
+!scripts/06_compute_roi_metrics.py
+!scripts/07_demographic_and_qc_stats.py
+!scripts/07b_table1_main_cohort.py
+!scripts/08_main_group_analysis.py
+!scripts/09_roi_mixed_model.py
+!scripts/10_channel_level_analysis.py
+!scripts/11_clinical_correlation.py
+!scripts/12_periodic_peak_analysis.py
+!scripts/14_sensitivity_analysis.py
+!scripts/16_generate_report_tables.py
+!scripts/17_qc_and_sensitivity_followup.py
+!scripts/18_compare_with_preschool_study_checks.py
+!scripts/19_development_and_reliability_extension.py
+!scripts/19_plot_specparam_qc_review.py
+!scripts/21_make_consort_flow_paper.py
+!scripts/21_make_paper_figures_v2.py
+!scripts/23_iclabel_artifact_sensitivity.py
+!scripts/25_nested_cv_aperiodic_classifier.py
+!scripts/26_build_ml_input_dataset.py
+!scripts/28_plot_ml_publication_figures.py
+!scripts/30_make_shap_for_older72_logreg.py
+
+# --- src/: only modules used by v11 pipeline ---
+src/*
+!src/__init__.py
+!src/config.py
+!src/io_utils.py
+!src/eeg_preprocessing.py
+!src/psd_utils.py
+!src/specparam_utils.py
+!src/roi_utils.py
+!src/qc_utils.py
+!src/stats_utils.py
+!src/plotting_utils.py
+!src/extension_analysis.py
+!src/preschool_study_comparison.py
+!src/iclabel_sensitivity.py
+!src/paper_figures.py
+!src/paper_figures_v2.py
+!src/consort_flowchart.py
+!src/consort_flowchart_paper.py
+
+# --- config/: main study only ---
+config/*
+!config/config.yaml
+!config/roi_channels.yaml
+
+# --- outputs/reports: v11 + supplementary docs only ---
+outputs/*
+!outputs/reports/
+outputs/reports/*
+!outputs/reports/manuscript_draft_zh_v11_final.md
+!outputs/reports/manuscript_draft_zh_v11_final.docx
+!outputs/reports/GITHUB_上传说明.md
+!outputs/reports/supplementary_results_compare_preschool.md
+!outputs/reports/analysis_summary.md
+!outputs/reports/extension_development_reliability.md
+!outputs/reports/supplementary_materials_v11/
+outputs/reports/supplementary_materials_v11/scripts/
 
 # OS / IDE
 .DS_Store
@@ -43,13 +123,11 @@ Thumbs.db
 *._tmp_*.docx
 ~$*.docx
 
-# Optional: large figure outputs (keep structure via .gitkeep if needed)
+# Large outputs
 outputs/**/*.png
 outputs/**/*.pdf
 outputs/**/*.svg
-!outputs/reports/
-!outputs/reports/**/*
-!outputs/tables/*.csv
+outputs/tables/
 outputs/ml_biomarker/
-outputs_external_hbn/
 outputs/figures/
+notebooks/

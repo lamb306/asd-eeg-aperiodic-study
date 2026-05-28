@@ -2,8 +2,9 @@
 
 基于功率谱参数化（specparam / FOOOF）的 ASD vs TD 比较分析流水线。
 
-**代码仓库**：<https://github.com/lamb306/asd-eeg-aperiodic-study>  
-**论文稿（v11）补充材料**：`outputs/reports/supplementary_materials_v11/`
+**代码仓库**（仅含 v11 论文相关脚本）：<https://github.com/lamb306/asd-eeg-aperiodic-study>  
+**论文稿（v11）补充材料**：`outputs/reports/supplementary_materials_v11/`  
+**v11 脚本清单**：`scripts/README_v11_pipeline.md`
 
 ## 研究问题
 
