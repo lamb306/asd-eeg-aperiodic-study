@@ -7,11 +7,11 @@ venv/
 *.egg-info/
 .pytest_cache/
 
-# Data (large files — not for public repo)
+# Data
 data/
 !data/raw/.gitkeep
 
-# Root temp / one-off / external cohort tools
+# Local tools / temp
 .tmp_*.py
 *.msi
 *.rar
@@ -24,30 +24,24 @@ find_*.py
 replenish_*.py
 run_resting_download_batches.py
 data.csv
-revision_report_*.md
-manuscript_submission_final.docx
-supplementary_materials*.docx
 *.docx.bak
 自闭症*.docx
 figures_submission*/
 tables_submission*/
 transfer_packages*
 
-# Derivatives & large intermediates
+# Derivatives & large outputs
 derivatives/
 derivatives_*/
 outputs_matched*/
 outputs_task*/
 outputs_external*/
-
-# External download packages
 hbn_download_package*/
 hbn_eeg_subject_release*
 transfer_packages/
 
-# --- scripts/: NC manuscript pipeline (see scripts/README_NC_pipeline.md) ---
+# scripts allowlist
 scripts/*
-!scripts/README_NC_pipeline.md
 !scripts/00_check_environment.py
 !scripts/01_prepare_participants.py
 !scripts/02_preprocess_eeg.py
@@ -74,9 +68,8 @@ scripts/*
 !scripts/90_normative_exponent_analysis.py
 !scripts/91_spectral_maturation_joint_model.py
 !scripts/92_nonlinear_age_sensitivity.py
-!scripts/94_nc_figures_and_manuscript.py
 
-# --- src/: modules used by NC pipeline ---
+# src allowlist
 src/*
 !src/__init__.py
 !src/config.py
@@ -91,30 +84,20 @@ src/*
 !src/preschool_study_comparison.py
 !src/iclabel_sensitivity.py
 !src/paper_figures.py
-!src/paper_figures_v2.py
 !src/normative_analysis.py
 !src/spectral_maturation_analysis.py
 !src/nonlinear_age_sensitivity.py
-!src/nc_figures.py
 
-# --- config/: main study only ---
+# config
 config/*
 !config/config.yaml
 !config/roi_channels.yaml
 
-# --- outputs/reports: NC manuscript + supplementary docs only ---
+# manuscript only
 outputs/*
 !outputs/reports/
 outputs/reports/*
 !outputs/reports/manuscript_NC_revised_zh_clean.docx
-!outputs/reports/manuscript_NC_revised_zh_with_figures.docx
-!outputs/reports/GITHUB_上传说明.md
-!outputs/reports/supplementary_results_compare_preschool.md
-!outputs/reports/analysis_summary.md
-!outputs/reports/extension_development_reliability.md
-!outputs/reports/supplementary_materials_v11/
-outputs/reports/supplementary_materials_v11/scripts/
-outputs/reports/*.bak
 
 # OS / IDE
 .DS_Store
@@ -122,12 +105,11 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Logs & temp
+# Logs
 *.log
 *._tmp_*.docx
 ~$*.docx
 
-# Large outputs
 outputs/**/*.png
 outputs/**/*.pdf
 outputs/**/*.svg
