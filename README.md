@@ -2,9 +2,10 @@
 
 基于功率谱参数化（specparam / FOOOF）的 ASD vs TD 比较分析流水线。
 
-**代码仓库**（仅含 v11 论文相关脚本）：<https://github.com/lamb306/asd-eeg-aperiodic-study>  
-**论文稿（v11）补充材料**：`outputs/reports/supplementary_materials_v11/`  
-**v11 脚本清单**：`scripts/README_v11_pipeline.md`
+**代码仓库**（NC 叙事版论文相关脚本）：<https://github.com/lamb306/asd-eeg-aperiodic-study>  
+**论文稿（NC）**：`outputs/reports/manuscript_NC_revised_zh_with_figures.docx`  
+**脚本清单**：`scripts/README_NC_pipeline.md`  
+**补充材料说明（v11 流水线参考）**：`outputs/reports/supplementary_materials_v11/`
 
 ## 研究问题
 
@@ -93,8 +94,22 @@ python scripts/15_make_figures.py
 python scripts/16_generate_report_tables.py
 python scripts/17_qc_and_sensitivity_followup.py   # 样本流失、IQ 稳健性、显著通道坐标
 python scripts/19_plot_specparam_qc_review.py      # 单被试 specparam 拟合 QC 图
-python scripts/23_iclabel_artifact_sensitivity.py --threshold 0.80 --overwrite  # ICLabel 伪迹控制敏感性（不覆盖主分析）
+python scripts/23_iclabel_artifact_sensitivity.py --threshold 0.80 --overwrite
 ```
+
+### NC 叙事版图与稿件（Figure 1–5 + Extended Data）
+
+在完成主分析与扩展模块（规范模型、年龄敏感性、机器学习）后：
+
+```bash
+python scripts/90_normative_exponent_analysis.py
+python scripts/91_spectral_maturation_joint_model.py
+python scripts/92_nonlinear_age_sensitivity.py
+python scripts/25_nested_cv_aperiodic_classifier.py   # 若尚未运行
+python scripts/94_nc_figures_and_manuscript.py
+```
+
+输出：`outputs/figures/nc_manuscript/`、`outputs/reports/manuscript_NC_revised_zh_with_figures.docx`
 
 ### ICLabel 伪迹控制敏感性分析
 

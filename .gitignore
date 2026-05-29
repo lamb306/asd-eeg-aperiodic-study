@@ -27,6 +27,8 @@ data.csv
 revision_report_*.md
 manuscript_submission_final.docx
 supplementary_materials*.docx
+*.docx.bak
+自闭症*.docx
 figures_submission*/
 tables_submission*/
 transfer_packages*
@@ -43,9 +45,9 @@ hbn_download_package*/
 hbn_eeg_subject_release*
 transfer_packages/
 
-# --- scripts/: only v11 pipeline (see scripts/README_v11_pipeline.md) ---
+# --- scripts/: NC manuscript pipeline (see scripts/README_NC_pipeline.md) ---
 scripts/*
-!scripts/README_v11_pipeline.md
+!scripts/README_NC_pipeline.md
 !scripts/00_check_environment.py
 !scripts/01_prepare_participants.py
 !scripts/02_preprocess_eeg.py
@@ -65,16 +67,16 @@ scripts/*
 !scripts/17_qc_and_sensitivity_followup.py
 !scripts/18_compare_with_preschool_study_checks.py
 !scripts/19_development_and_reliability_extension.py
-!scripts/19_plot_specparam_qc_review.py
-!scripts/21_make_consort_flow_paper.py
-!scripts/21_make_paper_figures_v2.py
 !scripts/23_iclabel_artifact_sensitivity.py
 !scripts/25_nested_cv_aperiodic_classifier.py
 !scripts/26_build_ml_input_dataset.py
-!scripts/28_plot_ml_publication_figures.py
 !scripts/30_make_shap_for_older72_logreg.py
+!scripts/90_normative_exponent_analysis.py
+!scripts/91_spectral_maturation_joint_model.py
+!scripts/92_nonlinear_age_sensitivity.py
+!scripts/94_nc_figures_and_manuscript.py
 
-# --- src/: only modules used by v11 pipeline ---
+# --- src/: modules used by NC pipeline ---
 src/*
 !src/__init__.py
 !src/config.py
@@ -85,32 +87,34 @@ src/*
 !src/roi_utils.py
 !src/qc_utils.py
 !src/stats_utils.py
-!src/plotting_utils.py
 !src/extension_analysis.py
 !src/preschool_study_comparison.py
 !src/iclabel_sensitivity.py
 !src/paper_figures.py
 !src/paper_figures_v2.py
-!src/consort_flowchart.py
-!src/consort_flowchart_paper.py
+!src/normative_analysis.py
+!src/spectral_maturation_analysis.py
+!src/nonlinear_age_sensitivity.py
+!src/nc_figures.py
 
 # --- config/: main study only ---
 config/*
 !config/config.yaml
 !config/roi_channels.yaml
 
-# --- outputs/reports: v11 + supplementary docs only ---
+# --- outputs/reports: NC manuscript + supplementary docs only ---
 outputs/*
 !outputs/reports/
 outputs/reports/*
-!outputs/reports/manuscript_draft_zh_v11_final.md
-!outputs/reports/manuscript_draft_zh_v11_final.docx
+!outputs/reports/manuscript_NC_revised_zh_clean.docx
+!outputs/reports/manuscript_NC_revised_zh_with_figures.docx
 !outputs/reports/GITHUB_上传说明.md
 !outputs/reports/supplementary_results_compare_preschool.md
 !outputs/reports/analysis_summary.md
 !outputs/reports/extension_development_reliability.md
 !outputs/reports/supplementary_materials_v11/
 outputs/reports/supplementary_materials_v11/scripts/
+outputs/reports/*.bak
 
 # OS / IDE
 .DS_Store
